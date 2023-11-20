@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="submit_form.php" method="POST">
+    <label for="id_number">ID Number:</label>
+    <input type="text" id="id_number" name="id_number" placeholder="Enter ID number" required><br><br>
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" placeholder="Enter first name" required><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" placeholder="Enter last name" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number" pattern="[+][0-9]{3}[0-9]{9}" placeholder="+254--- --- ---" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter address" required></textarea><br><br>
+
+    <label for="date_of_birth">Date of Birth:</label>
+    <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+    <label for="position">Position:</label>
+    <select id="position" name="position" required>
+      <option value="">Select Position</option>
+      <option value="officer">Officer</option>
+      <option value="sales_rep">Sales Rep</option>
+      <option value="manager">Manager</option>
+      <option value="customer">Customer</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
